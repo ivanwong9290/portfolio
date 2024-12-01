@@ -2,7 +2,7 @@ import Landing from "./home/page";
 import About from "./about/page";
 import Thanks from "./thanks/page";
 import Skills from "./skills/page";
-import Projects from "./projects/page";
+import Experiences from "./experiences/page";
 
 import Section from "@/components/Section";
 
@@ -13,7 +13,7 @@ export default function Home() {
         <Landing />
       </Section>
       <Section>
-        <Projects />
+        <Experiences />
       </Section>
       <Section>
         <Skills />

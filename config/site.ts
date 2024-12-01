@@ -8,8 +8,8 @@ export const siteConfig = {
       href: "/",
     },
     {
-      label: "Projects",
-      href: "#projects",
+      label: "Experiences",
+      href: "#experiences",
     },
     {
       label: "Skills",
@@ -37,7 +37,7 @@ export const siteConfig = {
       applications to increase robustness of autonomous vehicle
       technology. I'm proud to help passengers and pedestrians
       to feel safer everyday. As an engineer, I enjoy seeking new
-      challenges by learning new technologies to overcome them. My
+      challenges by learning new technologies and overcoming them. My
       passion lies in application & algorithm design to simplify
       robotics advancement.`,
     },
@@ -46,16 +46,14 @@ export const siteConfig = {
       title: "As an engineer, I love to...",
       description: `What I love about engineering is that it makes you a lifelong learner. 
       There's always some new technologies for us to tinker around with, watching how nascent ideas turn into robust paradigms.
-      I thrive in my agile role as a full-stack engineer for our internal search-based application.
-      As a front-end engineer, I focus on bringing pleasant UI/UX solutions by exploring the latest web frameworks.
-      As a back-end and algorithm engineer, I work on making our test drive data searchable by means of database design and multimodal AI.
-      I'm driven to help my colleagues streamline their work by providing the quickest way possible to search for the data they need for their work. 
+      I thrive in my agile role as a full-stack engineer for our internal search-based application since there is always a new request waiting for me to
+      help my colleagues by providing new ideas and ways to search for the data they need for their work. 
       `,
     },
     {
-      image: "/images/travel_2.jpg",
+      image: "/images/BMP_8864.jpg",
       title: "Know me outside of work",
-      description: `Having been to four continents and in search of my twentieth country to visit, I'm a world traveler at heart! 
+      description: `Having been to 4 continents and in search of my 20th country to visit, I'm a world traveler at heart! 
       I'm mostly curious about the stories that make up a country's culture, architecture, and food, all the while challenging my adaptation skills and learning about myself. 
       From the rugged peaks of Peru, the bustles in Asia, the grandeur of Europe, I love sharing my stories and experiences with my knack for photography. When I'm at home in Boston,
       I like a nice game of pickle ball, hiking, and snowboarding in the winter, but you'll most likely catch me racking up my steps count wandering around town.

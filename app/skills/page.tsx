@@ -25,9 +25,11 @@ import {
 } from "react-icons/si";
 import { FaBolt, FaDatabase } from "react-icons/fa6";
 import { TbChartScatter3D } from "react-icons/tb";
+import SlideLeft from "@/components/SlideLeft";
 
 export default function Skills() {
   const iconSize: number = 30;
+  const delay_timer = 250;
   const skills = [
     {
       category: "Languages",
@@ -101,20 +103,24 @@ export default function Skills() {
             key={index}
             className="flex flex-col items-start w-full pb-4 pe-4 border-b-1.5 border-r-1.5 border-gray-500"
           >
-            <p className="text-xl md:text-2xl font-semibold uppercase tracking-wider mb-4">
-              {section.category}
-            </p>
-            <div className="grid gap-2 grid-cols-3 md:flex md:space-x-8">
-              {section.skills.map((skill, i) => (
-                <div
-                  key={i}
-                  className="flex flex-col space-y-2 text-sm md:text-md font-light tracking-wide items-center justify-center"
-                >
-                  {skill.icon}
-                  <p>{skill.name}</p>
+            <SlideLeft delay={delay_timer + index * 100}>
+              <>
+                <p className="text-xl md:text-2xl font-semibold uppercase tracking-wider mb-4">
+                  {section.category}
+                </p>
+                <div className="grid gap-2 grid-cols-3 md:flex md:space-x-8">
+                  {section.skills.map((skill, i) => (
+                    <div
+                      key={i}
+                      className="flex flex-col space-y-2 text-sm md:text-md font-light tracking-wide items-center justify-center"
+                    >
+                      {skill.icon}
+                      <p>{skill.name}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
+              </>
+            </SlideLeft>
           </div>
         ))}
       </div>

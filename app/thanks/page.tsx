@@ -19,6 +19,9 @@ export default function Thanks() {
           <div className="font-semibold text-2xl lg:text-4xl xl:text-5xl">
             Thanks for stopping by!
           </div>
+          <div className="text-md lg:text-lg xl:text-xl my-6 text-slate-400">
+            Don&apos;t forget to connect with me 😊
+          </div>
           <div className="flex gap-4 justify-center my-6">
             <Tooltip className="p-2" content="Github">
               <Link isExternal href={siteConfig.links.github} title="Github">

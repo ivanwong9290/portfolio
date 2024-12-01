@@ -15,7 +15,12 @@ import { ThemeSwitch } from "@/components/theme-switch";
 
 export const Navbar = () => {
   return (
-    <NextUINavbar isBlurred={false} maxWidth="xl" position="sticky">
+    <NextUINavbar
+      className="bg-orange-200 dark:bg-sky-950"
+      isBlurred={false}
+      maxWidth="xl"
+      position="sticky"
+    >
       <NavbarContent>
         <ul className="hidden lg:flex gap-32 justify-between ml-2 items-center">
           {siteConfig.navItems.map((item) => (

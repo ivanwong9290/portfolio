@@ -71,10 +71,10 @@ export default function Landing() {
               alt="NextUI hero Image"
               as={NextImage}
               className="max-w-full max-h-full object-cover"
-              height={400}
+              height={350}
               quality={100}
               src="/images/portrait.jpg"
-              width={400}
+              width={350}
             />
           </div>
         </div>
