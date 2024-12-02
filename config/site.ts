@@ -42,7 +42,7 @@ export const siteConfig = {
       robotics advancement.`,
     },
     {
-      image: "/images/travel_1.jpg",
+      image: "/images/travel_1.JPG",
       title: "As an engineer, I love to...",
       description: `What I love about engineering is that it makes you a lifelong learner. 
       There's always some new technologies for us to tinker around with, watching how nascent ideas turn into robust paradigms.
