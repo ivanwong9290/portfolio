@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -9,17 +10,22 @@ import {
 import { link as linkStyles } from "@nextui-org/theme";
 import NextLink from "next/link";
 import clsx from "clsx";
+import { useState } from "react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <NextUINavbar
       className="bg-orange-200 dark:bg-sky-950"
       isBlurred={false}
+      isMenuOpen={isMenuOpen}
       maxWidth="xl"
       position="sticky"
+      onMenuOpenChange={setIsMenuOpen}
     >
       <NavbarContent>
         <ul className="hidden lg:flex gap-32 justify-between ml-2 items-center">
@@ -56,7 +62,11 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <NextLink color="default" href={item.href}>
+              <NextLink
+                color="default"
+                href={item.href}
+                onClick={() => setIsMenuOpen(false)}
+              >
                 {item.label}
               </NextLink>
             </NavbarMenuItem>
